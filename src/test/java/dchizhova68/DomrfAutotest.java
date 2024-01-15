@@ -2,6 +2,7 @@ package dchizhova68;
 
 import dchizhova68.pages.DomrfPage;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
@@ -29,6 +30,7 @@ public class DomrfAutotest extends TestBase {
     }
 
     @Test
+    @Tag("Smoke")
     @DisplayName("Проверка страницы Контакты")
     void pageContactsShouldHavePhoneNumberTest() {
         domrfPage.openPage()
@@ -38,6 +40,7 @@ public class DomrfAutotest extends TestBase {
     }
 
     @Test
+    @Tag("Smoke")
     @DisplayName("Проверка поиска новостей")
     void newsSearch() {
         domrfPage.openPage()
@@ -48,6 +51,7 @@ public class DomrfAutotest extends TestBase {
     }
 
     @Test
+    @Tag("Smoke")
     @DisplayName("Проверка верхнего меню")
     void checkMenuTest() {
         domrfPage.openPage()
@@ -57,6 +61,7 @@ public class DomrfAutotest extends TestBase {
     }
 
     @Test
+    @Tag("Smoke")
     @DisplayName("Проверка наличия ссылок на соц. сети")
     void checkSocialsLinksTest() {
         domrfPage.openPage()

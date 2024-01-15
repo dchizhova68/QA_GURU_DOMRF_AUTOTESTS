@@ -51,3 +51,15 @@ tasks.withType(Test) {
         }
     }
 }
+
+task smoke_test(type: Test) {
+
+    useJUnitPlatform {
+        includeTags("Smoke")
+    }
+}
+task full_test(type: Test) {
+    useJUnitPlatform {
+        includeTags("FullScript")
+    }
+}
