@@ -13,7 +13,7 @@ public class TestBase {
         Configuration.browserVersion = System.getProperty("browserVersion", "100.0");
         Configuration.pageLoadStrategy = "eager";
         Configuration.timeout = 10000;
-        Configuration.baseUrl=System.getProperty("baseUrl","https://xn--d1aqf.xn--p1ai/");
+        Configuration.baseUrl=System.getProperty("baseUrl","https://дом.рф");
     }
 
     @AfterEach
